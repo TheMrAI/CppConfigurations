@@ -1,5 +1,5 @@
 ---
-Checks:          'clang-diagnostic-*,clang-analyzer-*,*'
+Checks:          'clang-diagnostic-*,clang-analyzer-*,bugprone-*,cert-*,cppcoreguidelines-*,hicpp-*,misc-*,modernize-*,performance-*,portability-*,readability-*'
 WarningsAsErrors: ''
 HeaderFilterRegex: ''
 AnalyzeTemporaryDtors: false
@@ -339,8 +339,6 @@ CheckOptions:
   - key:             readability-uppercase-literal-suffix.IgnoreMacros
     value:           '1'
   - key:             readability-uppercase-literal-suffix.NewSuffixes
-    value:           ''
-  - key:             zircon-temporary-objects.Names
     value:           ''
 ...
 
