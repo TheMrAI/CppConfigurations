@@ -1,0 +1,20 @@
+#include <string>
+#include <iostream>
+
+class Something{
+public:
+	std::string say_hello() const noexcept{
+	return "Hello";
+}	
+};
+
+auto main() -> int
+{
+	Something beepers[100];
+	for(const auto& beep : beepers){
+		auto printer = [&beep](unsigned number){
+		std::cout << std::to_string(number) << " # beeper says: " << beep.say_hello();
+}	
+}
+	return 0;
+}
